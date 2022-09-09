@@ -20,7 +20,7 @@ body {
   }
   /*TEXT*/
   h1, h2, h3, p {
-    color: #545454;
+    color: #ffffff;
   }
   /*MEDIA*/
   .gif {
@@ -92,4 +92,9 @@ body {
 
   th, td {
     border: 1px solid black;
+  }
+
+  #about-info
+  {
+    color: black;
   }
