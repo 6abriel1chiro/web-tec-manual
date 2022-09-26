@@ -11,9 +11,11 @@
     <title>Mi manual</title>
 </head>
 <body>
+
   <nav>
     <a id="back-btn" href="index.html">BACK</a>
   </nav>
+
   <main>
 
         <h2 class="table-title">CSS Documentation</h2>
@@ -25,48 +27,196 @@
             <th class="text-left">LINK</th class="text-left">
           </thead>
           <tr>
-            <td class="text-left">MDN</td class="text-left">
-            <td class="text-left">By mozilla</td class="text-left">
-            <td class="text-left"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">link</a></td class="text-left">
+            <td class="text-left">MDN</td>
+            <td class="text-left">By mozilla</td>
+            <td class="text-left"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">link</a></td>
           </tr>
           <tr>
-            <td class="text-left">W3SCHOOL</td class="text-left">
-            <td class="text-left">Freemium Web Education Site</td class="text-left">
-            <td class="text-left"><a href="https://www.w3schools.com/cssref/">link</a></td class="text-left">
+            <td class="text-left">W3SCHOOL</td>
+            <td class="text-left">Freemium Web Education Site</td>
+            <td class="text-left"><a href="https://www.w3schools.com/cssref/">link</a></td>
           </tr>
           <tr>
-            <td class="text-left">CSSREFERENCE,IO</td class="text-left">
-            <td class="text-left">A free visual guide to CSS</td class="text-left">
-            <td class="text-left"><a href="https://cssreference.io/">link</a></td class="text-left">
+            <td class="text-left">CSSREFERENCE,IO</td>
+            <td class="text-left">A free visual guide to CSS</td>
+            <td class="text-left"><a href="https://cssreference.io/">link</a></td>
           </tr>
-        </table class="table-fill">
+        </table >
     
 
   <h2 class="table-title">CSS Elements</h2>
 
   <table class="table-fill" id="elementos">
-    <thead>
-      <th class="text-left">ELEMENT</th class="text-left">
-      <th class="text-left">DESCRIPTION</th class="text-left">
-      <th class="text-left">DOCUMENTATION</th class="text-left">
-    </thead>
-    <tr>
-      <td class="text-left">div</td class="text-left">
-      <td class="text-left">generic Flow element</td class="text-left">
-      <td class="text-left"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div">link</a></td class="text-left">
-    </tr>
+      <thead>
+          <caption>Colores en CSS</caption>
+          <tr>
+              <th>Modelo</th>
+              <th>Descripcion</th>
+              <th>Sintaxis</th>
+              <th>Link</th>
+
+          </tr>
+      </thead>
+          <tr  data-href='https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb'>
+              <td>RGB</td>
+              <td>Each parameter (red, green, and blue) defines the intensity of the color with a value between 0 and 255. an extra parameter sets transparency</td>
+              <td>rgb(red,green,blue,opacity) i.e rgb(112,60,143,0.2) </td>
+              <td class="text-left"><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb'>link</a></td >
+
+          </tr>
+          <tr  data-href='https://developer.mozilla.org/en-US/docs/Web/CSS/hex-color'>
+              <td>Hex</td>
+              <td>a 6 digit value with the form: #rrggbb 
+                Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).</td>
+              <td>e.j #703c8f</td>
+              <td class="text-left"><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/hex-color'>link</a></td >
+
+          </tr >
+          <tr  data-href='https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hsl'>
+              <td>HSL</td>
+              <td>Model with 3 parameters hue([0-360]),saturation ([0-100]%) lightness([0-100]%) also an extra parameter for opacity</td>
+              <td>HSL(278,41%,40%,0.2)</td>
+              <td class="text-left"><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/hex-color'>link</a></td >
+
+          </tr>
     
-    </table class="table-fill">
-   </div>
-  </div>
-  </section>
-  
+    </table>  
+
+
+    <table class="table-fill" id="SelectorsTable">
+      <thead>
+          <caption>Selectores en CSS</caption>
+          <tr>
+              <th>Selector</th>
+              <th>Detail</th>
+              <th>Example</th>
+              <th>Link</th>
+
+          </tr>
+      </thead>
+          <tr  data-href='https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors'>
+              <td>Universal Selector </td>
+              <td>* to apply style to all elements</td>
+              <td>*{color:red;}</td>
+              <td class="text-left"><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors'>link</a></td >
+
+          </tr>
+          <tr  data-href='https://developer.mozilla.org/en-US/docs/Web/CSS/Type_selectors'>
+              <td>Type Selector</td>
+              <td>matches elements by node name. In other words, it selects all elements of the given type within a document.</td>
+              <td>p{color:green;}</td>
+              <td class="text-left"><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/Type_selectors'>link</a></td >
+
+          </tr>
+          <tr data-href='https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors'>
+              <td>Selector de clase</td>
+              <td> matches elements based on the contents of their class attribute</td>
+              <td>.clase1{color:blue;}</td>
+              <td class="text-left"><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors'>link</a></td >
+
+          </tr>
+          <tr data-href='https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors'>
+              <td>Selector de ID</td>
+              <td>matches an element based on the value of the element's id attribute. In order for the element to be selected, its id attribute must match exactly the value given in the selector</td>
+              <td>#ID1{color:blue;}</td>
+              <td class="text-left"><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors'>link</a></td >
+
+          </tr>
+          <tr  data-href='https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors'>
+              <td rowspan="6">Selector de atributos</td>
+              <td> matches elements based on the presence or value of a given attribute.</td>
+              <td>td[att]{color:red;}</td>
+              <td class="text-left"><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors'>link</a></td >
+
+          </tr>
+          <tr data-href='https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors'>
+              <td>matches elements euql to the given attribute.</td>
+              <td >td[att=value]{color:red;}</td>
+              <td class="text-left"><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors'>link</a></td >
+
+          </tr>
+          <tr  data-href='https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors'>
+            <td>matches elements that cointain a given value.</td>
+            <td  >td[att ~=value]{color:red;}</td>
+              <td class="text-left"><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors'>link</a></td >
+
+          </tr>
+          <tr data-href='https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors'>
+            <td>matches elements where the first element is the given attribute.</td>
+              <td  >td[att ^=value]{color:red;}</td>
+              <td class="text-left"><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors'>link</a></td >
+
+          </tr>
+          <tr  data-href='https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors'>
+            <td>matches elements where the last element is the given attribute.</td>
+              <td  >td[att $=value]{color:red;}</td>
+              <td class="text-left"><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors'>link</a></td >
+
+          </tr>
+          <tr  data-href='https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors'>
+              <td  >selects the elementsin the given attribute where some of the data is the attribute</td>
+              <td  >td[att *=value]{color:red;}</td>
+              <td class="text-left"><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors'>link</a></td >
+
+          </tr>
+          <tr data-href='https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes'>
+              <td>pseudo-class Selector</td>
+              <td>pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s).</td>
+              <td>button:hover{...};
+                  button:disabled{...};
+              </td>
+              <td class="text-left"><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes'>link</a></td >
+
+          </tr>
+          <tr  data-href='https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements'>
+              <td>pseudo-element Selector</td>
+              <td> pseudo-element is a keyword added to a selector that lets you style a specific part of the selected element(s)</td>
+              <td>p::first-line{...}</td>
+              <td class="text-left"><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements'>link</a></td >
+
+          </tr>
+          <tr  data-href='https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors#selector_lists'>
+              <td>Selectors lists</td>
+              <td>CSS selectors define the elements to which a set of CSS rules apply.  </td>
+              <td>Sel1,Sel2{...}</td>
+              <td class="text-left"><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/Selectors#selector_lists'>link</a></td >
+
+          </tr>
+          <tr  data-href='https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_combinator'>
+              <td>Descendant_combinator</td>
+              <td>typically represented by a single space (" ") character — combines two selectors such that elements matched by the second selector are selected if they have an ancestor (parent, parent's parent, parent's parent's parent, etc.) element matching the first selector. Selectors that utilize a descendant combinator are called descendant selectors.</td>
+              <td>Abuelo nieto{...}</td>
+              <td class="text-left"><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_combinator'>link</a></td >
+
+          </tr>
+          <tr data-href='https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator'>
+              <td>Child_combinator</td>
+              <td>he child combinator (>) is placed between two CSS selectors. It matches only those elements matched by the second selector that are the direct children of elements matched by the first.</td>
+              <td>parent>child{...}</td>
+              <td class="text-left"><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator'>link</a></td >
+
+          </tr>
+          <tr  data-href='https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_combinator'>
+              <td>sibling_combinator Selector</td>
+              <td>The general sibling combinator (~) separates two selectors and matches all iterations of the second element, that are following the first element (though not necessarily immediately), and are children of the same parent element</td>
+              <td>sibling~sibling2{...}</td>
+              <td class="text-left"><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_combinator'>link</a></td >
+
+          </tr>
+          <tr  data-href='https://developer.mozilla.org/en-US/docs/Web/CSS/Adjacent_sibling_combinator'>
+              <td>Adjacent_sibling_combinator Selector</td>
+              <td>adjacent sibling combinator (+) separates two selectors and matches the second element only if it immediately follows the first element, and both are children of the same parent element</td>
+              <td>sibling+sibling2{...}</td>
+              <td class="text-left"><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/Adjacent_sibling_combinator'>link</a></td >
+
+          </tr>
+      </table>
 
   </main>
 
 </body>
-<footer>
 
+<footer>
 
 </footer>
 </html>
