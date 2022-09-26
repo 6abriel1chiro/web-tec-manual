@@ -148,7 +148,7 @@
 
           </tr>
           <tr  data-href='https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors'>
-            <td>matches elements where the last element is the given attribute.</td>
+             <td>matches elements where the last element is the given attribute.</td>
               <td  >td[att $=value]{color:red;}</td>
               <td class="text-left"><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors'>link</a></td >
 
@@ -190,27 +190,73 @@
 
           </tr>
           <tr data-href='https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator'>
-              <td>Child_combinator</td>
-              <td>he child combinator (>) is placed between two CSS selectors. It matches only those elements matched by the second selector that are the direct children of elements matched by the first.</td>
-              <td>parent>child{...}</td>
+              <td >Child_combinator</td>
+              <td class="text-left">the child combinator (>) is placed between two CSS selectors. It matches only those elements matched by the second selector that are the direct children of elements matched by the first.</td>
+              <td class="text-left">parent>child{...}</td>
               <td class="text-left"><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator'>link</a></td >
 
           </tr>
           <tr  data-href='https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_combinator'>
-              <td>sibling_combinator Selector</td>
-              <td>The general sibling combinator (~) separates two selectors and matches all iterations of the second element, that are following the first element (though not necessarily immediately), and are children of the same parent element</td>
+              <td >sibling_combinator Selector</td>
+              <td >The general sibling combinator (~) separates two selectors and matches all iterations of the second element, that are following the first element (though not necessarily immediately), and are children of the same parent element</td>
               <td>sibling~sibling2{...}</td>
               <td class="text-left"><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_combinator'>link</a></td >
 
           </tr>
           <tr  data-href='https://developer.mozilla.org/en-US/docs/Web/CSS/Adjacent_sibling_combinator'>
-              <td>Adjacent_sibling_combinator Selector</td>
-              <td>adjacent sibling combinator (+) separates two selectors and matches the second element only if it immediately follows the first element, and both are children of the same parent element</td>
-              <td>sibling+sibling2{...}</td>
+              <td >Adjacent_sibling_combinator Selector</td>
+              <td >adjacent sibling combinator (+) separates two selectors and matches the second element only if it immediately follows the first element, and both are children of the same parent element</td>
+              <td >sibling+sibling2{...}</td>
               <td class="text-left"><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/Adjacent_sibling_combinator'>link</a></td >
 
           </tr>
       </table>
+
+
+
+
+      <table class="table-fill" id="sizes-table">
+        <thead>
+            <h2>CSS size units</h2>
+                <th>Unit</th>
+                <th>Description</th>
+                <th>Type</th>
+                <th>Equivalence</th>
+        </thead>
+            <tr >
+                <td>px</td>
+                <td >Screen Pixel</td>
+                <td >Absolute</td>
+                <td >0.265 mm</td>
+            </tr>
+            <tr   >
+                <td>rem</td>
+                <td  >changes in orden of text size</td>
+                <td  >Relative</td>
+                <td  >Variable</td>
+            </tr>
+            <tr  >
+                <td>%</td>
+                <td   >Relative to font size or width of parent element</td>
+                <td   >Relative</td>
+                <td   >Variable</td>
+            </tr>
+            <tr>
+                <td>vw</td>
+                <td >Viewport width, changes in order of screen width</td>
+                <td >Relative</td>
+                <td >Variable</td>
+            </tr>
+            <tr   >
+                <td>vh</td>
+                <td >Viewport height,  changes in order of screen height</td>
+                <td >Relative</td>
+                <td >Variable</td>
+            </tr>
+    </table>
+
+
+
 
   </main>
 
