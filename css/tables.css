@@ -145,7 +145,7 @@ body {
  }
  
 
- #back-btn{
+ .back-btn{
 
   line-height: 12px;
   width: 18px;
@@ -163,6 +163,26 @@ body {
 
   display: inline-block;
   border: 1px solid white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+ 
+ }
+ 
+
+ .go-btn{
+
+  line-height: 12px;
+  width: 18px;
+  font-size: 8pt;
+  font-family: tahoma;
+  margin-top: 1px;
+  margin-right: 2px;
+
+  background-color: white;
+
+  display: inline-block;
+  border: 1px solid rgb(0, 0, 0);
   padding: 10px 20px;
   border-radius: 10px;
   cursor: pointer;
